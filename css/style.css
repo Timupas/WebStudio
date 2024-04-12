@@ -1,0 +1,14 @@
+:root {
+    --accent-color:#2196F3;
+    --text-color:#212121;
+    --description-color:#757575;
+    --main-backgground-color:#FFF;
+    --main-background-team:#F5F4FA;
+    --footer-background:#2F303A;
+}
+.hero {
+    background-color:var(--footer-background);
+}
+.footer {
+    background-color:var(--footer-background);
+}
