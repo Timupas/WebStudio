@@ -5,10 +5,59 @@
     --main-backgground-color:#FFF;
     --main-background-team:#F5F4FA;
     --footer-background:#2F303A;
+    --logo-color:#000;
 }
-.hero {
-    background-color:var(--footer-background);
+
+body {
+    font-family: "Roboto";
 }
-.footer {
-    background-color:var(--footer-background);
+
+/* section header */
+
+.header-logo {
+    color:var(--logo-color);
+font-family: "Raleway";
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+
+.logo-color {
+    color:var(--accent-color);
+font-family: "Raleway";
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+
+.nav-link {
+    color: var(--text-color);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+
+.header-link {
+    color: var(--description-color);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+
+.active {
+    color:var(--accent-color);
 }
