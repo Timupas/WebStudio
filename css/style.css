@@ -235,3 +235,10 @@ line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
 }
 
+.container {
+    outline: 1px solid red;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
