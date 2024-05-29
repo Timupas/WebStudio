@@ -236,9 +236,45 @@ letter-spacing: 0.42px;
 }
 
 .container {
-    outline: 1px solid red;
+    outline: 1px solid var(--main-backgground-color);
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.container-hero {
+    outline: 1px solid var(--footer-background);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-advantages {
+    outline: 1px solid var(--main-backgground-color);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-work {
+    outline: 1px solid var(--main-backgground-color);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-team {
+    outline: 1px solid var(--main-background-team);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-footer {
+    outline: 1px solid var(--footer-background);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
