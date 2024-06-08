@@ -41,8 +41,24 @@ body {
 
 /* section header */
 
+.container {
+    outline: 1px solid red;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header {
     background-color: var(--main-backgground-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
 }
 
 .header-logo {
@@ -52,6 +68,7 @@ font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
+margin-right: 93px;
 }
 
 .logo-color {
@@ -76,6 +93,11 @@ letter-spacing: 0.28px;
     color: var(--accent-color);
 }
 
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
 .header-link {
     color: var(--description-color);
 font-size: 14px;
@@ -84,9 +106,17 @@ line-height: 1.14;
 letter-spacing: 0.28px;
 }
 
+
+
 .header-link:hover,
 .header-link:focus {
     color: var(--accent-color);
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
+    margin-left: 344px;
 }
 
 .active {
@@ -97,6 +127,9 @@ letter-spacing: 0.28px;
 
 .hero {
     background-color: var(--footer-background);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 }
 
 .hero-title {
@@ -107,6 +140,10 @@ font-weight: 900;
 line-height: 1.36; /* 136.364% */
 letter-spacing: 2.64px;
 text-transform: uppercase;
+width: 696px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -128,6 +165,12 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
 .advantages {
     background-color: var(--main-backgground-color);
+    padding-top: 94px;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 30px;
 }
 
 .advantages-title {
@@ -137,6 +180,7 @@ font-weight: 700;
 line-height: 1.14;
 letter-spacing: 0.42px;
 text-transform: uppercase;
+margin-bottom: 10px;
 }
 
 .advantages-desk {
@@ -151,6 +195,8 @@ letter-spacing: 0.42px;
 
 .work {
     background-color: var(--main-backgground-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .work-title {
@@ -160,13 +206,22 @@ font-size: 36px;
 font-weight: 700;
 line-height: 1.16;
 letter-spacing: 1.08px;
+margin-bottom: 50px;
+}
+
+.work-list {
+    display: flex;
+    gap: 30px;
 }
 
 /* section team */
 
 .team {
     background-color: var(--main-background-team);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
+
 
 .team-title {
     color: var(--text-color);
@@ -177,6 +232,22 @@ line-height: 1.16;
 letter-spacing: 1.08px;
 }
 
+.team-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--main-backgground-color);
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-img {
+    width: 270px;
+
+}
+
 .team-caption {
     color: var(--text-color);
 text-align: center;
@@ -184,6 +255,7 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.18;
 letter-spacing: 0.48px;
+margin-bottom: 10px;
 }
 
 .team-desk {
@@ -199,7 +271,10 @@ letter-spacing: 0.48px;
 
 .footer {
     background-color: var(--footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+
 
 .footer-logo {
     color: var(--main-backgground-color);
@@ -208,6 +283,8 @@ font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
+margin-bottom: 20px;
+display: block;
 }
 
 .footer-color {
@@ -225,6 +302,8 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
+margin-bottom: 9px;
+display: block;
 }
 
 .footer-link {
@@ -235,46 +314,12 @@ line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
 }
 
-.container {
-    outline: 1px solid red;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+.footer-item {
+    margin-bottom: 9px;
 }
 
-.container-hero {
-    outline: 1px solid red;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container-advantages {
-    outline: 1px solid red;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container-work {
-    outline: 1px solid red;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container-team {
-    outline: 1px solid red;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container-footer {
-    outline: 1px solid red;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+.footer-item:last-child {
+    margin-bottom: 0;
 }
 
 
