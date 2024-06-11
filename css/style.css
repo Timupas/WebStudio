@@ -328,6 +328,8 @@ letter-spacing: 0.42px;
     display: flex;
     gap: 8px;
     justify-content: center;
+    margin-bottom: 50px;
+    padding-top: 96px;
 }
 
 .btn-btn {
@@ -340,7 +342,7 @@ letter-spacing: 0.48px;
 border-radius: 4px;
 background: var(--main-background-team);
 padding: 6px 22px;
-margin-bottom: 50px;
+
 }
 
 .btn-btn:hover, .btn-btn:focus {
@@ -358,6 +360,7 @@ background: #2196F3;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom: 96px;
 }
 
 .card-item {
