@@ -7,6 +7,7 @@
     --footer-background:#2F303A;
     --logo-color:#000;
     --footer-number:rgba(255, 255, 255, 0.60);
+    --border-color: #EEE;
 }
 
 *,
@@ -323,29 +324,57 @@ letter-spacing: 0.42px;
     margin-bottom: 0;
 }
 
-
 .btn-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.btn-btn {
+    color: var(--text-color);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.62;
+letter-spacing: 0.48px;
+border-radius: 4px;
+background: var(--main-background-team);
+padding: 6px 22px;
+margin-bottom: 50px;
+}
+
+.btn-btn:hover, .btn-btn:focus {
+    color: var(--main-backgground-color);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.62; 
+letter-spacing: 0.48px;
     border-radius: 4px;
-    background: #2196F3;
-    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-    gap: 30px;
-    margin-bottom: 50px;
+background: #2196F3;
 }
 
 .card-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 35px;
-    margin-left: 215px;
+    gap: 30px;
 }
 
 .card-item {
-    flex-basis: calc(60px);
+    flex-basis: calc((100% - 60px) / 3);
+    
 }
 
+.card-div {
+    border: 1px solid var(--border-color);
+background: var(--main-backgground-color);
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
 .card-img {
-    width: 370px;;
-    margin-bottom: 140px;
+    width: 100%;
 }
 
 .card-title {
@@ -354,6 +383,9 @@ font-size: 18px;
 font-weight: 700;
 line-height: 36px;
 letter-spacing: 1.08px;
+width: 322px;
+margin-right: auto;
+margin-left: auto;
 }
 
 .card-desk {
@@ -362,4 +394,8 @@ font-size: 16px;
 font-weight: 400;
 line-height: 30px;
 letter-spacing: 0.48px;
+width: 322px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 4px;
 }
