@@ -10,9 +10,11 @@
     --border-color: #EEE;
 }
 
+
+
 *,
-*::after,
-*::before {
+::after,
+::before {
 box-sizing: border-box;
 }
 
@@ -154,8 +156,7 @@ font-size: 16px;
 font-weight: 700;
 line-height: 1.87; /* 187.5% */
 letter-spacing: 0.96px;
-width: 216px;
-height: 50px;
+padding: 10px 32px;
 flex-shrink: 0;
 border-radius: 4px;
 background: #2196F3;
@@ -329,7 +330,6 @@ letter-spacing: 0.42px;
     gap: 8px;
     justify-content: center;
     margin-bottom: 50px;
-    padding-top: 96px;
 }
 
 .btn-btn {
@@ -356,11 +356,15 @@ letter-spacing: 0.48px;
 background: #2196F3;
 }
 
+.card {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .card-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-bottom: 96px;
 }
 
 .card-item {
@@ -368,37 +372,36 @@ background: #2196F3;
     
 }
 
+.card-img {
+    width: 100%;
+}
+
 .card-div {
     border: 1px solid var(--border-color);
 background: var(--main-backgground-color);
 padding-top: 20px;
 padding-bottom: 20px;
+padding-right: 24px;
+padding-left: 24px;
 }
 
 
-.card-img {
-    width: 100%;
-}
+
 
 .card-title {
-    color: #212121;
+    color: var(--text-color);
 font-size: 18px;
 font-weight: 700;
 line-height: 36px;
 letter-spacing: 1.08px;
-width: 322px;
-margin-right: auto;
-margin-left: auto;
 }
 
 .card-desk {
-    color: #757575;
+    color: var(--description-color);
 font-size: 16px;
 font-weight: 400;
 line-height: 30px;
 letter-spacing: 0.48px;
-width: 322px;
-margin-right: auto;
-margin-left: auto;
+/* width: 322px; */
 margin-top: 4px;
 }
