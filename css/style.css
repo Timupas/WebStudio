@@ -133,6 +133,7 @@ letter-spacing: 0.28px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-image: url(../images/BgHero.jpg);
 }
 
 .hero-title {
@@ -402,6 +403,5 @@ font-size: 16px;
 font-weight: 400;
 line-height: 30px;
 letter-spacing: 0.48px;
-/* width: 322px; */
 margin-top: 4px;
 }
