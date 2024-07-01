@@ -184,6 +184,7 @@ line-height: 1.14;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 margin-bottom: 10px;
+padding-top: 30px;
 }
 
 .advantages-desk {
@@ -192,6 +193,15 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
+}
+
+.advantages-img {
+    border-radius: 4px;
+    background: var(--main-background-team);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 /* section work */
