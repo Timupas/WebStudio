@@ -195,13 +195,30 @@ line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
 }
 
-.advantages-img {
+.advantages-item::before {
+    content: "";
+    display: block;
+    /* padding: 25px 100px; */
+    width: 270px ;
+    height: 120px;
+    margin-bottom: 30px;
     border-radius: 4px;
-    background: var(--main-background-team);
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 100px;
-    padding-right: 100px;
+    background-color: var(--main-background-team);
+    background-image: url(../images/antenna.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages-item:nth-child(2)::before {
+    background-image: url(../images/clock.png);
+}
+
+.advantages-item:nth-child(3)::before {
+    background-image: url(../images/diagram.png);
+}
+
+.advantages-item:nth-child(4)::before {
+    background-image: url(../images/astronaut.png);
 }
 
 /* section work */
@@ -353,7 +370,7 @@ letter-spacing: 0.48px;
 border-radius: 4px;
 background: var(--main-background-team);
 padding: 6px 22px;
-
+border: none;
 }
 
 .btn-btn:hover, .btn-btn:focus {
