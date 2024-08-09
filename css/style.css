@@ -318,7 +318,7 @@ letter-spacing: 0.48px;
 }
 
 .team-icons:hover {
-    fill: var(--accent-color);
+    fill: var(--main-backgground-color);
 }
 
 .client-icon {
@@ -380,6 +380,18 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
+}
+
+.footer-icon {
+    fill: var(--main-backgground-color);
+}
+
+.footer-circle-icon {
+    fill: rgba(255, 255, 255, 0.10);
+}
+
+.footer-circle-icon:hover {
+    fill: var(--accent-color);
 }
 
 .footer-item {
