@@ -115,9 +115,11 @@ letter-spacing: 0.28px;
     display: flex;
 }
 
-.header-cont:hover,
-.header-cont:focus {
-    color: var(--accent-color);
+.header-cont:hover {
+    color: var(--accent-color); 
+    .logo {
+        fill: var(--accent-color);
+    }
 }
 
 
@@ -132,16 +134,10 @@ letter-spacing: 0.28px;
     height: 12px;
 }
 
-
-
-.logo:hover {
-    fill: var(--accent-color);
-}
-
 .header-list {
     display: flex;
     gap: 50px;
-    margin-left: 344px; 
+    margin-left: auto; 
 }
 
 .active {
