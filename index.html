@@ -61,7 +61,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
+          <button type="button" data-modal-open class="hero-btn">Замовити послугу</button>
         </div>
       </section>
       <section class="advantages">
@@ -103,12 +103,21 @@
           <ul class="work-list">
             <li class="work-item">
               <img src="./images/laptop3.jpg" alt="ноутбук" class="work-img" />
+              <div class="work-box">
+                <h3 class="work-caption">Десктопні додатки</h3>
+              </div>
             </li>
             <li class="work-item">
               <img src="./images/phone.png" alt="телефон" class="work-img" />
+              <div class="work-box">
+                <h3 class="work-caption">Мобільні додатки</h3>
+              </div>
             </li>
             <li class="work-item">
               <img src="./images/tablet.png" alt="планшет" class="work-img" />
+              <div class="work-box">
+                <h3 class="work-caption">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -331,5 +340,52 @@
         </div>
       </div>
     </footer>
+    <!-- Модельне вікно -->
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-close">
+          <svg class="close-icon">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+        <form class="modal-form">
+          <label class="form-label">
+            Ім'я
+            <input type="text" required class="form-input">
+            <svg class="input-icon">
+              <use href="./images/symbol-defs.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="form-label">
+            Телефон
+            <input type="tel" required class="form-input">
+            <svg class="input-icon">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="form-label">
+            Пошта
+            <input type="email" required class="form-input">
+            <svg class="input-icon">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="form-label">
+            Коментар
+            <textarea name="comment" placeholder="Введіть текст" class="form-comment"></textarea>
+          </label>
+          <div class="check-wrap">
+          <label class="check-box">
+            <input type="checkbox" class="check-input">
+            <p class="form-text">Погоджуюся з розсилкою та приймаю</p>
+          </label>
+          <a href="#" class="form-link">Умови договору</a>
+        </div>
+          <button type="submit" class="form-btn">Відправити</button>
+        </form>
+      </div>
+     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
