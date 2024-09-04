@@ -115,11 +115,14 @@ letter-spacing: 0.28px;
     display: flex;
 }
 
-.header-cont:hover {
-    color: var(--accent-color); 
+.header-link:hover {
     .logo {
         fill: var(--accent-color);
     }
+}
+
+.header-cont:hover {
+    color: var(--accent-color);
 }
 
 
