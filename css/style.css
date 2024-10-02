@@ -147,6 +147,7 @@ letter-spacing: 0.28px;
     color:var(--accent-color);
 }
 
+
 /* section hero */
 
 .hero {
@@ -549,6 +550,22 @@ background: #2196F3;
 box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+    padding: 63px 24px;
+    background: rgba(33, 150, 243, 0.90);
+    opacity: 0;
+    transition-property: background-color tansform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    transform: translateY(100%);
+}
+
 .card {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -562,11 +579,35 @@ box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0
 
 .card-item {
     flex-basis: calc((100% - 60px) / 3);
-    
+}
+
+.paragraph {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.54px;
 }
 
 .card-item:hover {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.card-box:hover, .paragraph {
+    opacity: 1;
+    .overlay {
+        opacity: 1;
+        transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
+        transform: translateY(0);
+    }
+}
+
+.card-box {
+    overflow: hidden;
+    position: relative;
 }
 
 .card-img {
@@ -579,10 +620,7 @@ background: var(--main-backgground-color);
 padding-top: 20px;
 padding-bottom: 20px;
 padding-right: 24px;
-padding-left: 24px;
 }
-
-
 
 
 .card-title {
