@@ -1,0 +1,46 @@
+.work {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__title {
+        color: $nav-list-link;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+    }
+    
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+    
+    &__item {
+        position: relative;
+    }
+    
+    &__box {
+        background: $gra;
+        width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    position: absolute;
+    bottom: 0;
+    }
+    
+    &__text {
+        color: $white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    }
+}

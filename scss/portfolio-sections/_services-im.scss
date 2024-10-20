@@ -1,0 +1,13 @@
+.services__im {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .services__im:hover .services__paragraph {
+    opacity: 1;
+  transform: translate(0);
+   transition-property: transform;
+   transition-duration: 250ms;
+   transition-delay: 0;
+   overflow: hidden;
+ }

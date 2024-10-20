@@ -1,0 +1,23 @@
+.services__paragraph {
+    color: $white;
+    font-size: 18px;
+    font-style: 1.55;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 0.54px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.90);;
+    opacity: 0;
+    transition-property: color background-color transform;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  transform: translatey(370px);
+  overflow: hidden;
+  }

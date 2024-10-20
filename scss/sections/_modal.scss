@@ -1,0 +1,242 @@
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient($rgba, $rgba) ;
+    opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  }
+  
+  .is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .modal {
+  padding: 40px ;
+  background-color: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  .model__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 10px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    border: 1px solid $gradient;
+    outline: none;
+  }
+  
+  .btn__svg {
+    width: 11px;
+    height: 11px;
+  }
+  
+  .btn__svg:hover {
+    fill: $logo;
+    cursor: pointer;
+  }
+  
+  .model__btn:hover, .model__btn:focus {
+    .btn__svg {
+      fill: $logo;
+      transition-property: fill ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    }
+  }
+  
+  &__title {
+    color: $nav-list-link;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.6px;
+  text-align: center;
+  margin-bottom: 12px;
+  }
+  
+  &__lab {
+    color: $contacts-list-link;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.12px;
+  border: none;
+  }
+  
+  &__inp {
+    display: block;
+    width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid $gradient;
+  padding: 12px 12px 12px 42px;
+  margin-bottom: 10px;
+  margin-top: 4px;
+  outline: none;
+  }
+  
+  &__inp:hover {
+  border: none;
+  }
+  
+  
+  &__coment {
+    display: block;
+    width: 448px;
+  height: 120px;
+  border-radius: 4px;
+  border-color: $gradient;
+  padding: 12px 16px;
+  margin-bottom: 25px;
+  resize: none;
+  margin-top: 4px;
+  outline: none;
+  }
+  
+  &__box {
+  position: relative;
+  }
+  
+  &__box:hover, &__box:focus {
+    .modal__inp {
+      border: 1px solid $logo;
+    }
+    .model__svg {
+      fill: $logo;
+    }
+  }
+  
+  &__inp:hover + .model__svg, &__inp:focus + .model__svg {
+    fill: $logo; 
+    transition-property: fill ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    }
+  
+  .model__svg {
+    width: 18px;
+    height: 18px;
+    top: 53%;
+    left: 12px;
+    position: absolute;
+  }
+  
+  &__us {
+    width: 18px;
+    height: 18px;
+  }
+  
+  &__lab:hover, &__lab:focus {
+    &__coment {
+        border: 1px solid $logo;
+    }
+  }
+  
+  .model__btn:hover, .model__btn:focus {
+    .btn__svg {
+      fill: $logo;
+    }
+  }
+  
+  &__inp:hover, &__inp:focus {
+    border-color: $logo;
+  }
+    
+  &__chek {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    outline: none;
+  }
+  
+  .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 34px;
+  
+    &__text {
+      color: $contacts-list-link;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.42px;
+    width: 400px;
+    }
+    
+    &__link {
+      color: $logo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+    }
+  
+    &__btn {
+      color: $white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 0.96px;
+    padding: 10px 53px;
+    border-radius: 4px;
+    background: $logo;
+    box-shadow: 0px 4px 4px 0px $gradien;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    }
+  }
+  
+  
+  
+  &__btn {
+    text-align: center;
+  }
+  
+  
+  
+  .current {
+    color: $logo;
+  }
+  
+    .current::after {
+        content: "";
+        width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: $logo;
+  display: block;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  box-sizing: border-box;
+    }
+  }
+  
+  
+  
+    /* .current:last-child::after {
+        width: 78px;
+  height: 4px;
+    } */
+  

@@ -1,0 +1,51 @@
+.features {
+    padding-top: 94px;
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+    
+    &__item::before {
+        content: "";
+        border-radius: 4px;
+        background: $team;
+        width: 270px;
+        height: 120px;
+        display: block;
+        background-image: url(../img/antenna.jpg);
+        background-repeat:no-repeat ;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+    
+    &__item:nth-child(2)::before {
+        background-image: url(../img/clock.jpg);
+    }
+    
+    &__item:nth-child(3)::before {
+        background-image: url(../img/diagram.jpg);
+    }
+    
+    &__item:nth-child(4)::before {
+        background-image: url(../img/astronaut.jpg);
+    }
+    
+    &__title {
+        color: $nav-list-link;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    }
+    
+    &__text {
+        color: $contacts-list-link;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
+    letter-spacing: 0.42px;
+    }
+}

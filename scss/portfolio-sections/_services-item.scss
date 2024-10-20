@@ -1,0 +1,31 @@
+.services__item {
+    /* width: 370px;
+height: 404px;
+flex-shrink: 0; */
+flex-basis: calc((100% - 60px) / 3);
+border: 1px solid $nwhite;
+background: $white;
+position: relative;
+}
+
+.services-item:hover {
+    border: 1px solid $nwhite;
+    background: $white;
+    box-shadow: 0px 1px 1px 0px $b, 0px 4px 4px 0px $bo, 1px 4px 6px 0px $box;
+    transition-property: box-shadow ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+    .services-paragraph {
+        opacity: 1;
+    }
+}
+
+  .services-item:hover, .services-paragraph {
+    opacity: 1;
+  transform: translate(0);
+   transition-property: transform;
+   transition-duration: 250ms;
+   transition-delay: 0;
+   overflow: hidden;
+ }

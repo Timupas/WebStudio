@@ -1,0 +1,163 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: solid 1px $line;
+
+&__,.container{
+        display: flex;
+    }
+
+    &__nav{
+        display: flex;
+        margin-right:auto;
+    }
+
+    &__logo {
+        color: $logo;
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.38;
+        letter-spacing: 0.78px;
+        margin-right: 93px;
+        }
+        
+        &__span {
+        color: $text-color;
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.38;
+        letter-spacing: 0.78px;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+
+            .contacts__link:hover,
+            &__link:hover {
+            color: $logo;
+        }
+        
+        &__item {
+            position: relative;
+        }
+        
+        &__link {
+        color: $nav-list-link;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.28px;
+        }
+        
+        &__link:hover,
+        &__link:focus {
+          color: $logo;
+           transition-property: color;
+           transition-duration: 250ms;
+           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+           transition-delay: 0;
+        }
+        }
+        
+        
+        
+        &__list {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        &__item {
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+        
+        &__link {
+            gap: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        &__:hover {
+            &__contact {
+                fill: $logo;
+            }
+            &__cont {
+                color: $logo;
+            }
+        }
+        
+        &__link:hover,
+        &__link:focus {
+          transition-property: color ;
+          transition-duration: 250ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-delay: 0;
+          color: $logo;
+          
+          .header__contact {
+            fill: $logo;
+            transition-property: fill ;
+          transition-duration: 250ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-delay: 0;
+          }
+        
+          .header__cont {
+            transition-property: color ;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-delay: 0;
+            color: $logo;
+          }
+        }
+        
+        &__contact {
+        fill: $contacts-list-link;
+        width: 16px;
+        height: 12px;
+        }
+        
+        &__item:nth-child(2) &__contact {
+            width: 10px;
+            height: 16px;
+        }
+        
+        &__cont {
+        color: $contacts-list-link;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.28px;
+        }
+        
+        &__cont:hover {
+            color: $logo;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.28px;
+        }
+
+        .current {
+            color: $logo;
+        }
+        
+            .current::after {
+                content: "";
+                width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: $logo;
+        display: block;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        box-sizing: border-box;
+            }
+
+}
