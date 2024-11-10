@@ -5,10 +5,7 @@
     font-weight: 400;
     line-height: 28px; /* 155.556% */
     letter-spacing: 0.54px;
-    padding-top: 63px;
-    padding-bottom: 63px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 77px 24px;
     position: absolute;
     top: 0;
     left: 0;
@@ -20,4 +17,14 @@
   transition-delay: 0;
   transform: translatey(370px);
   overflow: hidden;
+  height: 100%;
+  width: 100%;
+    
+        @media screen and (min-width: 768px) {
+          padding: 57px 24px ;
+        }
+    
+        @media screen and (min-width: 1200px){
+          padding: 63px 24px ;
+        }
   }
