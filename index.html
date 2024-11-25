@@ -22,6 +22,11 @@
         <div class="container">
             <nav class="header__nav">
                 <a class="header__logo" href="./index.html">Web<span class="header__span">Studio</span></a>
+                <button type="button" class="hero__button" modal-header-open>
+                    <svg class="hero__menu">
+                    <use href="./img/symbol-defs.svg#menu"></use>
+                    </svg>
+                    </button>
                 <ul class="nav">
                     <li class="nav__item"><a class="nav__link current" href="./index.html">Студія</a></li>
                     <li class="nav__item"><a class="nav__link" href="./pages/portfolio.html">Портфоліо</a></li>
@@ -32,14 +37,34 @@
                 <li class="header__item"><a class="header__link" href="mailto:info@devstudio.com"><svg class="header__contact"><use href="./img/symbol-defs.svg#envelope"></use></svg><span class="header__cont">info@devstudio.com</span></a></li>
                 <li class="header__item"><a class="header__link" href="tel:+380961111111"><svg class="header__contact"><use href="./img/symbol-defs.svg#smartphone"></use></svg><span class="header__cont">+38 096 111 11 11</span></a></li>
             </ul>
+            <div class="menu is-hidden" header-modal>
+                <button type="button" class="menu__btn" modal-header-close><svg class="menu__close">
+                  <use href="./img/symbol-defs.svg#cross"></use>
+                </svg></button>
+                <ul class="menu__list">
+                  <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
+                  <li class="menu__item"><a href="./pages/portfolio.html" class="menu__link">Портфоліо</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+                </ul>
+                <ul class="menu__list-contact">
+                  <li class="menu__item-contact"><a href="tel:+380961111111" class="menu__link-contact">+38 096 111 11 11</a></li>
+                  <li class="menu__item-contact"><a href="mailto:info@devstudio.com" class="menu__link-contact">info@devstudio.com</a></li>
+                </ul>
+                <ul class="menu__list-socials">
+                  <li class="menu__item-social"><a href="#" class="menu__link-social">Instagram</a></li>
+                  <li class="menu__item-social"><a href="#" class="menu__link-social">Twitter</a></li>
+                  <li class="menu__item-social"><a href="#" class="menu__link-social">Facebook</a></li>
+                  <li class="menu__item-social"><a href="#" class="menu__link-social">LinkedIn</a></li>
+                </ul>
+              </div>
         </div>
     </header>
     <main>
         <!-- секція герой -->
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title" data-aos="fade-left">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero__btn" data-aos="zoom-out-down" data-modal-open>Замовити послугу</button>
+                <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+                <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <!-- секція функций -->
@@ -77,7 +102,10 @@
                         <li class="work__item" data-aos="fade-zoom-in"
                         data-aos-easing="ease-in-back"
                         data-aos-delay="300"
-                        data-aos-offset="0"><img class="work__img" src="./img/laptop3.jpg" alt="program">
+                        data-aos-offset="0">
+                        <picture><source srcset="./img/deskstop/program@1x.webp, ./img/deskstop/program@2x.webp" media="(min-width: 1200px)" />
+                            <img class="work__img" src="./img/program.jpg" alt="program">
+                        </picture>
                             <div class="work__box">
                                 <h2 class="work__text">Десктопні додатки</h2>
                             </div>
@@ -85,7 +113,8 @@
                         <li class="work__item" data-aos="fade-zoom-in"
                         data-aos-easing="ease-in-back"
                         data-aos-delay="300"
-                        data-aos-offset="0"><img class="work__img" src="./img/phone.jpg" alt="computer">
+                        data-aos-offset="0"><picture><source srcset="./img/deskstop/computer@1x.webp, ./img/deskstop/computer@2x.webp" media="(min-width: 1200px)" />
+                            <img class="work__img" src="./img/computer.jpg" alt="computer"></picture>
                             <div class="work__box">
                                 <h2 class="work__text">Мобільні додатки</h2>
                             </div>
@@ -93,7 +122,8 @@
                         <li class="work__item" data-aos="fade-zoom-in"
                         data-aos-easing="ease-in-back"
                         data-aos-delay="300"
-                        data-aos-offset="0"><img class="work__img" src="./img/tablet.png" alt="designer">
+                        data-aos-offset="0"><picture><source srcset="./img/deskstop/designer@1x.webp, ./img/deskstop/designer@2x.webp" media="(min-width: 1200px)">
+                            <img class="work__img" src="./img/designer.jpg" alt="designer"></picture>
                             <div class="work__box">
                                 <h2 class="work__text">Дизайнерські рішення</h2>
                             </div>
@@ -170,7 +200,7 @@
                             </ul>
                         </li>
                         <li class="team__item" data-aos="flip-right">
-                            <img width="270" class="team__img" src="./img/mykhailo.jpg" alt="mykhailo">
+                            <img width="270" class="team__img" src="./img/muxaylo.jpg" alt="muxaylo">
                             <div class="team__box">
                             <h3 class="team__caption">Михайло Єрмаков</h3>
                             <p class="team__text">UI Designer</p>
@@ -195,49 +225,44 @@
             </section>
             <section class="clients">
                 <div class="container">
-                    <h2 class="clients__title" data-aos="fade-up-left">Постійні клієнти</h2>
+                    <h2 class="clients__title">Постійні клієнти</h2>
                     <ul class="clients__list">
-                        <li class="clients__item" data-aos="flip-up">
+                        <li class="clients__item">
                             <a href="#" class="clients__link">
                                 <svg class="clients__icon">
                                     <use href="./img/symbol-defs.svg#ya-co"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="clients__item" data-aos="flip-down">
+                        <li class="clients__item">
                             <a href="#" class="clients__link">
                                 <svg class="clients__icon">
                                     <use href="./img/symbol-defs.svg#company"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="clients__item" data-aos="fade-up"
-                        data-aos-duration="3000">
+                        <li class="clients__item">
                             <a href="#" class="clients__link">
                                 <svg class="clients__icon">
                                     <use href="./img/symbol-defs.svg#company-apple"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="clients__item" data-aos="fade-left"
-                        data-aos-anchor="#example-anchor"
-                        data-aos-offset="500"
-                        data-aos-duration="500">
+                        <li class="clients__item">
                             <a href="#" class="clients__link">
                                 <svg class="clients__icon">
                                     <use href="./img/symbol-defs.svg#foster"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="clients__item" data-aos="fade-up"
-                        data-aos-anchor-placement="center-bottom">
+                        <li class="clients__item">
                             <a href="#" class="clients__link">
                                 <svg class="clients__icon">
                                     <use href="./img/symbol-defs.svg#brand"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="clients__item" data-aos="flip-left">
+                        <li class="clients__item">
                             <a href="#" class="clients__link">
                                 <svg class="clients__icon">
                                     <use href="./img/symbol-defs.svg#tag-line"></use>
@@ -366,6 +391,7 @@
         </div>
       </div>
       <script src="./js/modal.js"></script>
+      <script src="./js/modal-header.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();

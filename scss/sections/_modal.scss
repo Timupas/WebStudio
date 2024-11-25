@@ -24,6 +24,22 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+border-radius: 4px;
+width: 90%;
+height: 609px;
+
+@media screen and (min-width: 480px) {
+width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+  width: 528px;
+height: 581px;
+}
 
 .model__btn {
   display: flex;
@@ -37,6 +53,18 @@ transform: translate(-50%, -50%);
   right: 14px;
   border: 1px solid $gradient;
   outline: none;
+
+  @media screen and (min-width: 480px) {
+
+  }
+  
+  @media screen and (min-width: 768px) {
+  
+  }
+  
+  @media screen and (min-width: 1200px) {
+  
+  }
 }
 
 .btn__svg {
@@ -63,10 +91,28 @@ transform: translate(-50%, -50%);
   color: $nav-list-link;
 font-size: 20px;
 font-weight: 700;
-line-height: 1.15;
 letter-spacing: 0.6px;
 text-align: center;
 margin-bottom: 12px;
+line-height: 30px;
+width: 100%;
+
+@media screen and (max-width: 333px) {
+  line-height: 20px;
+  }
+
+@media screen and (min-width: 480px) {
+width: 370px;
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 1200px) {
+  line-height: 1.15;
+  width: auto;
+}
 }
 
 &__lab {
@@ -76,18 +122,43 @@ font-weight: 400;
 line-height: 1.16;
 letter-spacing: 0.12px;
 border: none;
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 1200px) {
+  
+}
 }
 
 &__inp {
   display: block;
-  width: 448px;
-height: 40px;
 border-radius: 4px;
 border: 1px solid $gradient;
 padding: 12px 12px 12px 42px;
 margin-bottom: 10px;
 margin-top: 4px;
 outline: none;
+width: 100%;
+  height: 40px;
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+  width: 448px;
+height: 40px;
+}
 }
 
 &__inp:hover {
@@ -97,8 +168,6 @@ border: none;
 
 &__coment {
   display: block;
-  width: 448px;
-height: 120px;
 border-radius: 4px;
 border-color: $gradient;
 padding: 12px 16px;
@@ -106,6 +175,21 @@ margin-bottom: 25px;
 resize: none;
 margin-top: 4px;
 outline: none;
+width: 100%;
+height: 120px;
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+  width: 448px;
+height: 120px;
+}
 }
 
 &__box {
@@ -163,6 +247,17 @@ position: relative;
   height: 16px;
   margin-right: 8px;
   outline: none;
+  @media screen and (min-width: 480px) {
+
+  }
+  
+  @media screen and (min-width: 768px) {
+  
+  }
+  
+  @media screen and (min-width: 1200px) {
+    
+  }
 }
 
 .check {
@@ -171,22 +266,58 @@ position: relative;
   justify-content: center;
   margin-bottom: 34px;
 
+  @media screen and (min-width: 480px) {
+
+  }
+  
+  @media screen and (min-width: 768px) {
+  
+  }
+  
+  @media screen and (min-width: 1200px) {
+    
+  }
+
   &__text {
     color: $contacts-list-link;
-  font-size: 14px;
   font-weight: 400;
-  line-height: 1.7;
   letter-spacing: 0.42px;
-  width: 400px;
+  width: 100%;
+height: 14px;
+  font-size: 12px;
+  @media screen and (min-width: 480px) {
+    width: 346px;
+  }
+  
+  @media screen and (min-width: 768px) {
+  
+  }
+  
+  @media screen and (min-width: 1200px) {
+    width: 400px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
   }
   
   &__link {
     color: $logo;
-  font-size: 14px;
+    font-size: 12px;
+  text-decoration-line: underline;
+  @media screen and (min-width: 480px) {
+    
+  }
+  
+  @media screen and (min-width: 768px) {
+  
+  }
+  
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.42px;
-  text-decoration-line: underline;
+  }
   }
 
   &__btn {
@@ -203,6 +334,18 @@ position: relative;
   border: none;
   cursor: pointer;
   outline: none;
+
+  @media screen and (min-width: 480px) {
+width: 100%;
+  }
+  
+  @media screen and (min-width: 768px) {
+  
+  }
+  
+  @media screen and (min-width: 1200px) {
+    
+  }
   }
 }
 
